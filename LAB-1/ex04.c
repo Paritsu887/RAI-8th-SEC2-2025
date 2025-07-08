@@ -7,5 +7,5 @@ int main(){
     c= 6.4;
     printf("%.1f + %.1f - %.1f = \n",a,b,c);
     d= a+b-c;
-    printf("%.1f",d);
+    printf("%.1f\n",d);
 }
