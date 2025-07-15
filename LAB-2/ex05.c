@@ -4,8 +4,9 @@ int main (){
     float height;
     char a[20];
     char b[20];
-    printf("Enter your full Name:  ");
-     scanf("%s",a);
+    char c[20];
+    printf("Enter your full name : ");
+    scanf("%[^\n]”,);
     printf("Enter your Age:  ");
     scanf("%d",&age);
     printf("Enter your Height: ");

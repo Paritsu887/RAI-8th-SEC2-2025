@@ -1,8 +1,9 @@
 #include <stdio.h>
+#include <math.h>
 int main(){
     char name[30];
     int ID,
-    float Composcore;
+    int comscore = 0;
     float Physicscore;
     float Calscore;
 
@@ -13,7 +14,7 @@ int main(){
     scanf("%d",&ID);
 
   printf("Enter your Programing score: ");
-    scanf("%f",&Composcore);
+    scanf("%d",&comscore);
 
   printf("Enter your Physics score: ");
     scanf("%f",&Physicscore);
@@ -21,7 +22,7 @@ int main(){
  printf("Enter your Calculus score: ");
     scanf("%f",&Calscore);
 
-  float gpa = (Composcore+Physicscore+Calscore) / 3;
+  float gpa = (comscore+Physicscore+Calscore) / 3;
 
   printf("Hi %s(%d)! Your GPA is %.2f\n",name,ID,gpa);
  return 0;
