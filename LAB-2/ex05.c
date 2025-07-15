@@ -1,19 +1,18 @@
-#include <stdio.h>
-int main (){
-    int age;
+#include<stdio.h>
+#include<string.h>
+int main(){
+   char name [100], uni [20], first [50], last [50];
+   int age;
     float height;
-    char a[20];
-    char b[20];
-    char c[20];
-    printf("Enter your full name : ");
-    scanf("%[^\n]”,);
-    printf("Enter your Age:  ");
+    printf("Enter your full name: ");
+    scanf("%[^\n]", name);
+    printf("Enter your age: ");
     scanf("%d",&age);
-    printf("Enter your Height: ");
+    printf("Enter your height: ");
     scanf("%f",&height);
-    printf("Enter your University name: ");
-    scanf("%s",b);
-
-    printf("Hi! Everyone.This is %s from %s. I am %d years old and my height is %.2f cm tall.",a,b,age,height);
+    printf("Enter you University name: ");
+    scanf("%s", uni);
+    sscanf(name, "%s %s", first, last);
+    printf("Hi! Everyone. This is %c.%s from %s. I am %d years old and my height is %.1f cm tall\n", last[0], first, uni, age, height);
     return 0;
 }
