@@ -3,7 +3,6 @@
 #include<math.h>
 int main(){
     int i;
-    float d;
  struct profile{
  float X;
  float Y;
@@ -19,7 +18,7 @@ int main(){
      float X2 = s[2].X;
      float Y1 = s[1].Y;
      float Y2 = s[2].Y;
-d = {(X2-X1)*2+(Y2-Y1^2)}*1/2;
-   printf("Distance between (X[%f], X[%f]) and (Y[%f], Y[%f]) is %0.3f",s[1].X,s[2].X,s[1].Y,s[2].Y,d);
+   double D = sqrt(pow(s[2].X-s[1].X,2)+pow(s[2].Y-s[1].Y,2));
+   printf("Distance between (X[%0.2f], X[%0.2f]) and (Y[%0.2f], Y[%0.2f]) is %0.3f",s[1].X,s[2].X,s[1].Y,s[2].Y,D);
      return 0;
     }
